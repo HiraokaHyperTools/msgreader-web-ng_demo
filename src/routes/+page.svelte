@@ -1,5 +1,4 @@
 <script>
-    import { MsgReader } from "@kenjiuno/msgreader-web-ng";
     import { JSONEditor } from "svelte-jsoneditor";
     import { parseMsg } from "$lib/index.js";
 
@@ -36,7 +35,7 @@
 
 <p>
     Quick links: <a
-        href="https://github.com/HiraokaHyperTools/msgreader-web-ng-demo"
+        href="https://github.com/HiraokaHyperTools/msgreader-web-ng_demo"
         target="_blank">msgreader-web-ng-demo</a
     >
 </p>
