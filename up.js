@@ -8,10 +8,10 @@ const exec = promisify(child_process.exec);
 
 async function run() {
   try {
-    await exec("robocopy build docs /xf .git", {});
+    await exec("robocopy build docs /xf .git /mir", {});
   }
   catch (e) {
-    if (e.code !== 2 && e.code !== 3) {
+    if (e.code !== 2) {
       console.error("robocopy error", e.code);
       return;
     }
