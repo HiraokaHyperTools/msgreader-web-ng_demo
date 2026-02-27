@@ -11,7 +11,7 @@ async function run() {
     await exec("robocopy build docs /xf .git", {});
   }
   catch (e) {
-    if (e.code !== 2) {
+    if (e.code !== 2 && e.code !== 3) {
       console.error("robocopy error", e.code);
       return;
     }
